@@ -1,0 +1,8 @@
+{
+  "Id": "Building0CD",
+  "DisplayName": "建筑无CD",
+  "Author": "xiaoye97",
+  "Version": "1.1.0",
+  "AssemblyName": "Building0CD.dll",
+  "EntryMethod": "Building0CD.Main.Load"
+}

@@ -1,0 +1,42 @@
+ManifestFileVersion: 0
+CRC: 3316678117
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: ef82c9667cbc11d5b57e8d48b867f42d
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: dcfe52597ef8c5418aad8872450acbf1
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 23
+  Script: {instanceID: 0}
+- Class: 33
+  Script: {instanceID: 0}
+- Class: 43
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+- Class: 64
+  Script: {instanceID: 0}
+- Class: 82
+  Script: {instanceID: 0}
+- Class: 241
+  Script: {instanceID: 0}
+- Class: 243
+  Script: {instanceID: 0}
+- Class: 245
+  Script: {instanceID: 0}
+- Class: 328
+  Script: {instanceID: 0}
+Assets:
+- Assets/VideoPlayerMix.mixer
+- Assets/TVVideoPlayer.prefab
+- Assets/ScreenMat.mat
+Dependencies: []

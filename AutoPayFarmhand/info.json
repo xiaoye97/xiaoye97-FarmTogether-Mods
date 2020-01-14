@@ -1,0 +1,8 @@
+{
+  "Id": "AutoPayFarmhand",
+  "DisplayName": "农工自觉领工资",
+  "Author": "xiaoye97",
+  "Version": "1.1.0",
+  "AssemblyName": "AutoPayFarmhand.dll",
+  "EntryMethod": "AutoPayFarmhand.Main.Load"
+}

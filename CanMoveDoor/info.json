@@ -1,0 +1,8 @@
+{
+  "Id": "CanMoveDoor",
+  "DisplayName": "可以移动门",
+  "Author": "xiaoye97",
+  "Version": "1.0.0",
+  "AssemblyName": "CanMoveDoor.dll",
+  "EntryMethod": "CanMoveDoor.Main.Load"
+}

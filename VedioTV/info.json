@@ -1,0 +1,8 @@
+{
+  "Id": "VideoTV",
+  "DisplayName": "视频电视",
+  "Author": "xiaoye97",
+  "Version": "1.2.0",
+  "AssemblyName": "VideoTV.dll",
+  "EntryMethod": "VideoTV.Main.Load"
+}

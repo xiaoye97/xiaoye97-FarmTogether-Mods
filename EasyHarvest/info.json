@@ -1,0 +1,8 @@
+{
+  "Id": "EasyHarvest",
+  "DisplayName": "一键收获/浇水/喂食(第一次使用请在右侧打开设置看说明)",
+  "Author": "xiaoye97",
+  "Version": "1.4.2",
+  "AssemblyName": "EasyHarvest.dll",
+  "EntryMethod": "EasyHarvest.Main.Load"
+}

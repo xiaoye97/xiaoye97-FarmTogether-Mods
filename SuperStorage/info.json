@@ -1,0 +1,8 @@
+{
+  "Id": "SuperStorage",
+  "DisplayName": "超级存储",
+  "Author": "xiaoye97",
+  "Version": "1.0.0",
+  "AssemblyName": "SuperStorage.dll",
+  "EntryMethod": "SuperStorage.Main.Load"
+}

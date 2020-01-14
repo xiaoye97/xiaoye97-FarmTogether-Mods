@@ -1,0 +1,8 @@
+{
+  "Id": "UnlockAllItem",
+  "DisplayName": "解锁全部物品",
+  "Author": "xiaoye97",
+  "Version": "1.0.0",
+  "AssemblyName": "UnlockAllItem.dll",
+  "EntryMethod": "UnlockAllItem.Main.Load"
+}
