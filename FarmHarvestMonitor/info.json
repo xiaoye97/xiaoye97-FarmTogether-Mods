@@ -1,0 +1,8 @@
+{
+  "Id": "FarmHarvestMonitor",
+  "DisplayName": "农场收获监控",
+  "Author": "xiaoye97",
+  "Version": "1.0.0",
+  "AssemblyName": "FarmHarvestMonitor.dll",
+  "EntryMethod": "FarmHarvestMonitor.Main.Load"
+}
