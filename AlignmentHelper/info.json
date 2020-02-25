@@ -1,1 +1,8 @@
 {
+  "Id": "AlignmentHelper",
+  "DisplayName": "对齐辅助线",
+  "Author": "xiaoye97",
+  "Version": "1.2.0",
+  "AssemblyName": "AlignmentHelper.dll",
+  "EntryMethod": "AlignmentHelper.Main.Load"
+}
