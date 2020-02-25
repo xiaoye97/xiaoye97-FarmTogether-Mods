@@ -1,8 +1,8 @@
 {
   "Id": "EasyHarvest",
-  "DisplayName": "一键收获/浇水/喂食(第一次使用请在右侧打开设置看说明)",
+  "DisplayName": "一键收获(E)/浇水喂食(R) (本人所有mod均在群内免费发布，未授权任何二次售卖)",
   "Author": "xiaoye97",
-  "Version": "1.4.2",
+  "Version": "2.0.0",
   "AssemblyName": "EasyHarvest.dll",
-  "EntryMethod": "EasyHarvest.Main.Load"
+  "EntryMethod": "EasyHarvest.ModMain.Load"
 }

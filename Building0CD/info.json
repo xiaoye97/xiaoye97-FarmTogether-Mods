@@ -1,8 +1,8 @@
 {
   "Id": "Building0CD",
-  "DisplayName": "建筑无CD",
+  "DisplayName": "建筑无CD(默认关闭功能，请在载入农场后手动开启)",
   "Author": "xiaoye97",
-  "Version": "1.1.0",
+  "Version": "1.2.0",
   "AssemblyName": "Building0CD.dll",
   "EntryMethod": "Building0CD.Main.Load"
 }

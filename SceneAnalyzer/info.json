@@ -1,0 +1,8 @@
+{
+  "Id": "SceneAnalyzer",
+  "DisplayName": "场景分析器",
+  "Author": "xiaoye97",
+  "Version": "1.0.0",
+  "AssemblyName": "SceneAnalyzer.dll",
+  "EntryMethod": "SceneAnalyzer.Main.Load"
+}

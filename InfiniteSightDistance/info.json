@@ -1,0 +1,8 @@
+{
+  "Id": "InfiniteSightDistance",
+  "DisplayName": "无限视距",
+  "Author": "xiaoye97",
+  "Version": "1.0.0",
+  "AssemblyName": "InfiniteSightDistance.dll",
+  "EntryMethod": "InfiniteSightDistance.Main.Load"
+}

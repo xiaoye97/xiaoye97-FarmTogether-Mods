@@ -8,13 +8,21 @@ namespace Building0CD
 {
     public static class Main
     {
-        public static UnityModManager.ModEntry.ModLogger logger;
+        public static UnityModManager.ModEntry mod;
         public static bool Load(UnityModManager.ModEntry modEntry)
         {
-            logger = modEntry.Logger;
-            var harmony = HarmonyInstance.Create(modEntry.Info.Id);
-            harmony.PatchAll(Assembly.GetExecutingAssembly());
+            mod = modEntry;
+            HarmonyInstance.Create(modEntry.Info.Id).PatchAll(Assembly.GetExecutingAssembly());
             modEntry.OnGUI = OnGUI;
+            return true;
+        }
+
+        public static bool IsLoadFarm()
+        {
+            if (StageScript.Instance == null) return false;
+            if (!StageScript.Instance.Loaded) return false;
+            if (StageScript.Instance.FarmData == null) return false;
+            if (!StageScript.Instance.LocalPlayer.IsFarmOwner) return false;
             return true;
         }
 
@@ -33,18 +41,20 @@ namespace Building0CD
         {
             public static void Postfix(Building __instance)
             {
-                if (__instance.Definition.Interaction != BuildingDefinition.BuildingInteractions.None
-                    && __instance.Definition.Interaction != BuildingDefinition.BuildingInteractions.Farmhand
-                    && __instance.Definition.Interaction != BuildingDefinition.BuildingInteractions.PayFarmhands
-                    && __instance.Definition.Interaction != BuildingDefinition.BuildingInteractions.Count
-                    && __instance.Definition.Interaction != BuildingDefinition.BuildingInteractions.PeriodicHarvest)
+                if (IsLoadFarm())
                 {
-                    if (__instance.State == Building.BuildingState.Waiting)
+                    if (mod.Enabled)
                     {
-                        if (StageScript.Instance.LocalPlayer.IsFarmOwner)
+                        if (__instance.Definition.Interaction != BuildingDefinition.BuildingInteractions.None
+                                                                && __instance.Definition.Interaction != BuildingDefinition.BuildingInteractions.Farmhand
+                                                                && __instance.Definition.Interaction != BuildingDefinition.BuildingInteractions.PayFarmhands
+                                                                && __instance.Definition.Interaction != BuildingDefinition.BuildingInteractions.PeriodicHarvest)
                         {
-                            Traverse.Create(__instance).Field("waitTimeElapsed").SetValue(__instance.Definition.InteractionInterval);
-                            Traverse.Create(__instance).Property("State").SetValue(Building.BuildingState.Ready);
+                            if (__instance.State == Building.BuildingState.Waiting)
+                            {
+                                Traverse.Create(__instance).Field("waitTimeElapsed").SetValue(__instance.Definition.InteractionInterval);
+                                Traverse.Create(__instance).Property("State").SetValue(Building.BuildingState.Ready);
+                            }
                         }
                     }
                 }
@@ -59,11 +69,14 @@ namespace Building0CD
         {
             public static void Postfix(HouseBuilding __instance)
             {
-                if (__instance.State == HouseBuilding.HouseConstructionState.Waiting)
+                if (IsLoadFarm())
                 {
-                    if (StageScript.Instance.LocalPlayer.IsFarmOwner)
+                    if (mod.Enabled)
                     {
-                        Traverse.Create(__instance).Field("constructionTimeElapsed").SetValue(__instance.Definition.ConstructionStepInterval);
+                        if (__instance.State == HouseBuilding.HouseConstructionState.Waiting)
+                        {
+                            Traverse.Create(__instance).Field("constructionTimeElapsed").SetValue(__instance.Definition.ConstructionStepInterval);
+                        }
                     }
                 }
             }

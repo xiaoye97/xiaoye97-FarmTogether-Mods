@@ -1,3 +1,4 @@
+using UnityEngine;
 using UnityModManagerNet;
 
 namespace EasyHarvest
@@ -21,5 +22,7 @@ namespace EasyHarvest
         public bool logToggle = true;
         public bool allowHarvestToggle = false;
         public bool allowRefillToggle = false;
+        public KeyCode harvestHotkey = KeyCode.E;
+        public KeyCode refillHotkey = KeyCode.R;
     }
 }

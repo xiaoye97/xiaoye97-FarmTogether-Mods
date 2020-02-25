@@ -1,0 +1,8 @@
+{
+  "Id": "PhotoTimeHelper",
+  "DisplayName": "拍照自定义时间(不影响正常时间)",
+  "Author": "xiaoye97",
+  "Version": "1.0.0",
+  "AssemblyName": "PhotoTimeHelper.dll",
+  "EntryMethod": "PhotoTimeHelper.Main.Load"
+}

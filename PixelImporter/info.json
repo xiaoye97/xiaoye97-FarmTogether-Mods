@@ -1,0 +1,8 @@
+{
+  "Id": "PixelImporter",
+  "DisplayName": "像素画导入器",
+  "Author": "xiaoye97",
+  "Version": "1.1.0",
+  "AssemblyName": "PixelImporter.dll",
+  "EntryMethod": "PixelImporter.Main.Load"
+}
